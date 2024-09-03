@@ -1,0 +1,91 @@
+.main {
+    height: 455px;
+    width: 350px;
+    background-color: rgb(143, 147, 144);
+    position: relative;
+    margin-top: 80px;
+    margin-left: 550px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(7, 7, 7);
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.hadder {
+    height: 90px;
+    width: 290px;
+    background-color: rgb(250, 253, 253);
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: absolute;
+    top: 16px;
+    left: 25px;
+    border-radius: 10px 10px 0 0;
+
+
+}
+
+.button {
+    position: absolute;
+    top: 120px;
+    left: 25px;
+
+
+}
+
+.button button {
+    height: 60px;
+    width: 72px;
+    border-radius: 10%;
+    margin-top: 4px;
+    box-shadow: 0 0 10px;
+    background-color: white;
+    transition: all ease 0.5;
+    border: none;
+
+}
+
+.button .bu1 button {
+    height: 60px;
+    width: 148px;
+    font-size: 20px;
+}
+
+.button .bu1 button:hover {
+    background-color: rgb(124, 208, 244);
+    box-shadow: 0 0 50px white;
+    border: 2px solid rgb(29, 156, 211);
+    color: #ffffff;
+}
+
+.button .bu2 button {
+    height: 60px;
+    width: 72px;
+    font-size: 20px;
+}
+
+.button .bu2 .cl {
+    background-color: rgb(253, 160, 53);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button .bu2 .cl:hover {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 162, 20);
+    color: black
+}
+
+.button .bu2 button:hover {
+
+    box-shadow: 0 0 50px white;
+    border: 3px solid rgb(248, 82, 146);
+    font-size: 22px;
+
+}

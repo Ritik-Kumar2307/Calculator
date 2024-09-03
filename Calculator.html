@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+
+</head>
+
+<body>
+
+    <h1>Calculator</h1>
+
+    <div class="main">
+    
+        <div class="hadder" id="display">
+
+        </div>
+
+        <div class="button">
+
+            <div class="bu1">
+                <button onclick="allclear()"><b>AC</b></button>
+                <button onclick="oneclear()"><b>C</b></button><br>
+
+            </div>
+
+            <div class="bu2">
+
+                <button onclick="task('7')"><b>7</b></button>
+                <button onclick="task('8')"><b>8</b></button>
+                <button onclick="task('9')"><b>9</b></button>
+                <button class="cl" onclick="task('+')"><b>+</b></button>
+                <button onclick="task('4')"><b>4</b></button>
+                <button onclick="task('5')"><b>5</b></button>
+                <button onclick="task('6')"><b>6</b></button>
+                <button class="cl" onclick="task('-')"><b>-</b></button>
+                <button onclick="task('1')"><b>1</b></button>
+                <button onclick="task('2')"><b>2</b></button>
+                <button onclick="task('3')"><b>3</b></button>
+                <button class="cl" onclick="task('*')"><b>*</b></button>
+                <button class="cl" onclick="task('0')"><b>0</b></button>
+                <button class="cl" onclick="task('.')"><b>.</b></button>
+                <button class="cl" onclick="task('/')"><b>/</b></button>
+                <button class="cl" onclick="result('=')"><b>=</b></button>
+
+            </div>
+
+
+            <script>
+
+
+                let arr = [];
+
+                function task(val) {
+                    arr.push(val);
+                    let fun = document.getElementById('display');
+                    fun.innerText = arr.join('');
+                    console.log(fun);
+
+                }
+
+                function result() {
+
+                    let str = arr.join('');
+                    let answer = eval(str);
+                    console.log(answer);
+
+                    let demo = document.getElementById('display');
+                    demo.innerHTML = answer;
+
+                }
+
+                function allclear() {
+                    arr = [];
+                    let demo = document.getElementById('display');
+                    demo.innerHTML = arr;
+                }
+
+                function oneclear() {
+
+                    arr.pop();
+                    let demo = document.getElementById('display');
+                    demo.innerHTML = arr.join('');
+
+                }
+
+            </script>
+
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
